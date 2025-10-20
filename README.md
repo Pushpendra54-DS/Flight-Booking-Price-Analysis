@@ -1,8 +1,8 @@
-# ✈️ Flight Price Prediction using Machine Learning
+# ✈️ Flight Booking Price Analysis using Machine Learning
 
 ## 📘 Overview
-This project aims to predict **flight ticket prices** based on multiple features such as airline, source city, destination, number of stops, and days left for departure.  
-By applying various machine learning algorithms and data preprocessing techniques, the goal is to understand which factors most influence flight prices and build accurate prediction models.
+This project predicts **flight ticket prices** based on factors such as airline, source and destination cities, number of stops, class, and days left before departure.  
+By exploring data patterns and implementing multiple regression models, the project aims to identify key factors influencing ticket prices and build an accurate predictive model.
 
 ---
 
@@ -15,54 +15,64 @@ By applying various machine learning algorithms and data preprocessing technique
 6. [Plots & Visualizations](#plots--visualizations)
 7. [Notebook](#notebook)
 8. [Badges](#badges)
+9. [Owner](#owner)
 
 ---
 
 ## 📊 Dataset
-- **Source:** [Google Drive Link](https://drive.google.com/your_dataset_link_here)
-- The dataset consists of the following columns:
+The dataset is large, so it has been uploaded to Google Drive.
+
+📂 **Access Dataset:**  
+👉 [Click Here to Download Dataset](https://drive.google.com/file/d/1Mh9-pGHUPuwXkZckud2QRovx4ecMAYR6/view?usp=drive_link)
+
+📁 **Path in Repository:**  
+`Flight-Booking-Price_Analysis/data/Dataset/.gitkeep`
+
+**Features Included:**
 
 | Feature | Description |
 |----------|-------------|
 | `airline` | Name of the airline |
 | `flight` | Flight code |
 | `source_city` | Departure city |
-| `departure_time` | Time of departure (morning/afternoon/evening) |
+| `departure_time` | Time of departure (Morning/Afternoon/Evening) |
 | `stops` | Number of stops |
 | `arrival_time` | Time of arrival |
 | `destination_city` | Destination city |
 | `class` | Class type (Economy/Business) |
-| `duration` | Total flight duration in hours |
-| `days_left` | Days left before flight departure |
-| `price` | Target variable — flight ticket price |
+| `duration` | Total duration of flight |
+| `days_left` | Number of days left before departure |
+| `price` | Target variable (Flight Ticket Price) |
 
 ---
 
 ## 🔍 Exploratory Data Analysis
-The EDA focuses on understanding how flight price varies with different factors such as:
-- Number of stops  
-- Airline and class type  
-- Source and destination city  
-- Days left for booking
+Explored key insights such as:
+- How **airline** and **class** impact ticket prices  
+- Relationship between **days left before departure** and **price**  
+- Correlation between numerical features  
+- Flight duration and its effect on cost  
 
 ---
 
 ## ⚙️ Data Preprocessing
 Steps performed:
+- Removed unnecessary columns  
 - Handled missing values  
-- Label encoded categorical features  
-- Removed outliers using VIF  
-- Applied Standard Scaler for feature scaling  
+- Label encoded categorical variables  
+- Standardized numerical features  
+- Checked multicollinearity using VIF  
+- Outlier detection and removal  
 
 ---
 
 ## 🤖 Modeling
-Models implemented:
+Models Implemented:
 - **Linear Regression**
 - **Decision Tree Regressor**
 - **Random Forest Regressor**
 
-Hyperparameter tuning was applied to improve model performance.
+Hyperparameter tuning was applied to enhance model accuracy.
 
 ---
 
@@ -74,27 +84,31 @@ Hyperparameter tuning was applied to improve model performance.
 | Decision Tree |  |  |  |  |  |
 | Random Forest |  |  |  |  |  |
 
-*(You can fill the above table with your actual metric values)*
+*(Fill in your actual metrics)*
 
 ---
 
 ## 🖼️ Plots & Visualizations
 
-### EDA Plots
-![Airline Distribution](images/plots/Airline_Distribution.png)  
-![Stops vs Price](images/plots/Stops_vs_Price.png)  
-![Days Left vs Price](images/plots/Days_Left_vs_Price.png)
+### 🧭 EDA Plots
+![Airline vs Price](images/plots/Airline%20Vs%20Price%20Plot.png)  
+![Average Flight Price by Airline](images/plots/Average%20Flight%20Price%20by%20Airline.png)  
+![Average Flight Price by Class and Airline](images/plots/Average%20Flight%20Price%20by%20Class%20and%20Airline.png)  
+![Correlation Heatmap](images/plots/Correlation%20Heatmap.png)  
+![Days Left vs Ticket Price](images/plots/Days%20Left%20Fore%20Departure%20Versus%20Ticket%20Price%20Plot.png)  
+![Source and Destination vs Price](images/plots/source%20and%20destination%20vs%20price.png)  
+![Categorical Feature Distribution](images/plots/Flight%20Data%20Categorical%20Feature%20Distribution.png)
 
-### Model Performance
-![Actual vs Predicted - Linear Regression](images/plots/Actual_vs_Predicted_LR.png)  
-![Actual vs Predicted - Decision Tree](images/plots/Actual_vs_Predicted_DT.png)  
-![Actual vs Predicted - Random Forest](images/plots/Actual_vs_Predicted_RF.png)
+### ⚙️ Model Performance
+![Linear Regression Actual vs Predicted](images/plots/Linear%20Regression%20Actual%20Vs%20Predicted.png)  
+![Decision Tree Regressor Actual vs Predicted](images/plots/Decision%20Tree%20Regressor%20Actual%20Vs%20Predicted.png)  
+![Random Forest Regressor Actual vs Predicted](images/plots/Random%20Forest%20Regressor%20Actual%20Vs%20Predicted.png)
 
 ---
 
 ## 📓 Notebook
-Access the full notebook here:  
-[🧠 Flight Price Prediction Notebook](notebooks/Flight_Price_Prediction.ipynb)
+Access the complete notebook here:  
+[🧠 Flight Price Analysis Notebook](notebooks/Flight_Price_Prediction.ipynb)
 
 ---
 
@@ -102,19 +116,27 @@ Access the full notebook here:
 
 ![Python](https://img.shields.io/badge/Python-3.10-blue.svg)
 ![Scikit-learn](https://img.shields.io/badge/Scikit--learn-Modeling-orange.svg)
-![Pandas](https://img.shields.io/badge/Pandas-Data%20Cleaning-green.svg)
+![Pandas](https://img.shields.io/badge/Pandas-Data%20Processing-green.svg)
 ![Matplotlib](https://img.shields.io/badge/Matplotlib-Visualization-yellow.svg)
 ![Status](https://img.shields.io/badge/Status-Completed-success.svg)
 
 ---
 
+## 👤 Owner
+**Project By:** Pushpendra Singh  
+📧 [LinkedIn Profile](https://www.linkedin.com/in/pushpendra-singh-3909aaba)  
+💻 [GitHub Profile](https://github.com/Pushpendra54-DS)
+
+---
+
 ## 💡 Conclusion
-- **Random Forest Regressor** performed the best among all models.
-- Days left before departure, number of stops, and airline type had the highest impact on price.
-- The project demonstrates how data preprocessing and ensemble learning can significantly improve regression performance.
+- **Random Forest Regressor** provided the best accuracy and least error metrics.  
+- Ticket price depends heavily on **airline**, **class**, **number of stops**, and **days left**.  
+- The project demonstrates how regression models can effectively predict real-world pricing scenarios.
 
 ---
 
 ## 🚀 Future Scope
-- Include more recent flight data for real-time prediction.
-- Deploy the model using Streamlit or Flask for user interaction.
+- Use live flight APIs for real-time predictions.  
+- Deploy the model using Streamlit or Flask.  
+- Add interactive dashboards using Power BI.
