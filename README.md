@@ -109,6 +109,7 @@ Hyperparameter tuning was applied to enhance model accuracy.
 ## 📓 Notebook
 Access the complete notebook here:  
 [🧠 Flight Price Analysis Notebook](notebooks/flight_booking.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Pushpendra54-DS/Flight-Booking-Price_Analysis/blob/main/notebooks/flight_booking.ipynb)
 
 ---
 
