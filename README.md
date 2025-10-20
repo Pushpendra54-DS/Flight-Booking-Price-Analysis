@@ -2,7 +2,7 @@
 
 ## 📘 Overview
 This project predicts **flight ticket prices** based on factors such as airline, source and destination cities, number of stops, class, and days left before departure.  
-By exploring data patterns and implementing multiple regression models, the project aims to identify key factors influencing ticket prices and build an accurate predictive model.
+By exploring data patterns and implementing multiple regression models, the project identifies key factors influencing ticket prices and builds an accurate predictive system.
 
 ---
 
@@ -78,13 +78,13 @@ Hyperparameter tuning was applied to enhance model accuracy.
 
 ## 📈 Results & Evaluation
 
-| Model | R² Score | MSE | MAE | RMSE | MAPE |
-|--------|-----------|-----|-----|------|------|
-| Linear Regression |  |  |  |  |  |
-| Decision Tree |  |  |  |  |  |
-| Random Forest |  |  |  |  |  |
+| Model | R² Score | MAE | MAPE | MSE | RMSE |
+|--------|-----------|-----|------|------|------|
+| **Linear Regression** | 0.9046 | 4627.36 | 0.4361 | 49,201,433.71 | 7014.37 |
+| **Decision Tree Regressor** | 0.9723 | 1305.97 | 0.0847 | 14,273,792.33 | 3778.07 |
+| **Random Forest Regressor** | 0.9827 | 1193.23 | 0.0780 | 8,922,193.14 | 2987.00 |
 
-*(Fill in your actual metrics)*
+✅ **Observation:** Random Forest achieved the **highest R² (0.9827)** with the **lowest error values**, making it the best-performing model for this problem.
 
 ---
 
@@ -108,7 +108,7 @@ Hyperparameter tuning was applied to enhance model accuracy.
 
 ## 📓 Notebook
 Access the complete notebook here:  
-[🧠 Flight Price Analysis Notebook](notebooks/Flight_Price_Prediction.ipynb)
+[🧠 Flight Price Analysis Notebook](notebooks/flight_booking.ipynb)
 
 ---
 
@@ -124,7 +124,7 @@ Access the complete notebook here:
 
 ## 👤 Owner
 **Project By:** Pushpendra Singh  
-📧 [LinkedIn Profile](https://www.linkedin.com/in/pushpendra-singh-3909aaba)  
+📧 [LinkedIn Profile](https://www.linkedin.com/in/pushpendra-singh54-ds)  
 💻 [GitHub Profile](https://github.com/Pushpendra54-DS)
 
 ---
